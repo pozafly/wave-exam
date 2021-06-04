@@ -1,0 +1,7 @@
+* {
+  /* 드래그나 더블클릭 시에 텍스트가 선택이 되지 않도록 설정 */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
