@@ -13,5 +13,6 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'no-new': 'off',
+    'no-plusplus': 'off',
   },
 };

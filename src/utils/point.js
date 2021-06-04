@@ -6,12 +6,12 @@ export default class Point {
    * 웨이브를 그리는데 이용되는 점은
    * 아래 위로 랜덤하게 offset 값을 가짐
    */
-  constructor(x, y) {
+  constructor(index, x, y) {
     this.x = x;
     this.y = y;
     this.fieldY = y; // 기본 Y 중심
     this.speed = 0.1;
-    this.cur = 0;
+    this.cur = index; // 각 점이 최대한 평행하지 않도록 각각 다른 시작점을 가지게 한다.
     this.max = Math.random() * 100 + 150;
   }
 
